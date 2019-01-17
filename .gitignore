@@ -1,0 +1,16 @@
+.idea/
+.svn/
+bin/
+*.iml
+*.class
+*.lib
+*.doc
+*.docx
+*.ppt
+*.pptx
+.hg/
+**/bin/
+**/target/
+*.log
+*.log.*
+/lib/

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-fragment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			  xmlns="http://java.sun.com/xml/ns/javaee"
+			  xmlns:webfragment="http://java.sun.com/xml/ns/javaee/web-fragment_3_0.xsd"
+			  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-fragment_3_0.xsd"
+			  id="WebFragment_egova_redis" version="3.0">
+	<servlet>
+		<servlet-name>base-InitServlet</servlet-name>
+		<servlet-class>cn.com.egova.base.servlet.InitServlet</servlet-class>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	<filter>
+		<filter-name>springSessionRepositoryFilter</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>springSessionRepositoryFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>ERROR</dispatcher>
+	</filter-mapping>
+</web-fragment>
