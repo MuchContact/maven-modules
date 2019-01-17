@@ -12,7 +12,7 @@
 
     <artifactId>muco-pub-base</artifactId>
     <name>base</name>
-    <version>${main.version}-${database.type}</version>
+    <version>${database.type}</version>
 
     <packaging>jar</packaging>
 
@@ -31,10 +31,10 @@
             <artifactId>commons-lang</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>net.spy</groupId>
-            <artifactId>spymemcached</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>net.spy</groupId>-->
+            <!--<artifactId>spymemcached</artifactId>-->
+        <!--</dependency>-->
     </dependencies>
 
     <build>

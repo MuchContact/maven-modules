@@ -20,6 +20,8 @@
     <properties>
         <main.basedir>${project.basedir}</main.basedir>
         <main.version>1.0.1</main.version>
+        <database.type>mysql</database.type>
+
     </properties>
 
     <profiles>
@@ -46,7 +48,7 @@
             <dependency>
                 <groupId>cn.com.egova</groupId>
                 <artifactId>muco-pub-base</artifactId>
-                <version>${main.version}-${database.type}</version>
+                <version>${database.type}</version>
             </dependency>
             <!--<dependency>-->
                 <!--<groupId>javax.servlet</groupId>-->
